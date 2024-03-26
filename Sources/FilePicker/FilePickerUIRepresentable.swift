@@ -41,6 +41,7 @@ public struct FilePickerUIRepresentable: UIViewControllerRepresentable {
     public init(types: [UTType], allowMultiple: Bool, asCopy: Bool, onPicked completionHandler: @escaping PickedURLsCompletionHandler) {
         self.types = types
         self.allowMultiple = allowMultiple
+        self.asCopy = asCopy
         self.pickedCompletionHandler = completionHandler
     }
     
