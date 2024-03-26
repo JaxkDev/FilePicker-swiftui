@@ -41,6 +41,7 @@ public struct FilePicker<LabelView: View>: View {
     public init(types: [UTType], allowMultiple: Bool, asCopy: Bool = true, onPicked completionHandler: @escaping PickedURLsCompletionHandler, @ViewBuilder label labelViewContent: @escaping LabelViewContent) {
         self.types = types
         self.allowMultiple = allowMultiple
+        self.asCopy = asCopy
         self.pickedCompletionHandler = completionHandler
         self.labelViewContent = labelViewContent
     }
